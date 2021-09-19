@@ -39,7 +39,6 @@ var bootstrapThebe = function() {
 document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
 </script>
 <br>
-<br>
 
 ## Figure 1
 
