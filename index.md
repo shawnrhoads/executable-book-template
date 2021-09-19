@@ -1,9 +1,6 @@
-# README
+# Executable Notebook Template
 
 You can use the materials in this [GitHub repository](https://github.com/shawnrhoads/executable-notebook-template/) to host interactive code and figures.
-
-## Figure 1
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -21,7 +18,7 @@ You can use the materials in this [GitHub repository](https://github.com/shawnrh
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
    
 <button id="activateButton" style="font-size: 1em;">
-    Click here to interact with this visualization
+    Click here to interact with the visualizations
 </button>
 
 <script>
@@ -30,6 +27,8 @@ var bootstrapThebe = function() {
 }
 document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
 </script>
+
+## Figure 1
 
 <pre data-executable="true" data-language="python">
 # interactive display
