@@ -72,7 +72,7 @@ def plot_data_estimate(intercept, beta_hat):
 </pre>
 
 ## Figure 2
-
+<!-- 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -88,7 +88,7 @@ def plot_data_estimate(intercept, beta_hat):
 </script>
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
    
-<button id="activateButton" style="width: 450px; height: 40px; font-size: 1.5em;">
+<button id="activateButton" style="font-size: 1em;">
     Click here to interact with this visualization
 </button>
 
@@ -97,7 +97,7 @@ var bootstrapThebe = function() {
    thebelab.bootstrap();
 }
 document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
-</script>
+</script> -->
 
 <pre data-executable="true" data-language="python">
 import nibabel as nib
