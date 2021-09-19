@@ -1,4 +1,4 @@
-name: executable-book-env
+name: executable-notebook-template
 channels:
   - conda-forge
 dependencies:
