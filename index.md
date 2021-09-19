@@ -20,9 +20,7 @@ You can use the materials in this [GitHub repository](https://github.com/shawnrh
     {
     requestKernel: true,
     binderOptions: {
-        repo: "shawnrhoads/executable-book-template",
-        ref: "main",
-        repoProvider: "github"
+        repo: "shawnrhoads/executable-book-template"
     },
     }
 </script>
