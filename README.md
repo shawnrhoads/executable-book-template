@@ -12,13 +12,14 @@ You can use the materials in this [GitHub repository](https://github.com/shawnrh
     {
     requestKernel: true,
     binderOptions: {
-        repo: "shawnrhoads/executable-book-template"
+        repo: "shawnrhoads/executable-book-template",
+        repoProvider: "github"
     },
     }
 </script>
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
    
-<button id="activateButton" style="width: 450px; height: 40px; font-size: 1.5em;">
+<button id="activateButton" style="font-size: 1em;">
     Click here to interact with this visualization
 </button>
 
@@ -80,7 +81,8 @@ def plot_data_estimate(intercept, beta_hat):
     {
     requestKernel: true,
     binderOptions: {
-        repo: "shawnrhoads/executable-book-template"
+        repo: "shawnrhoads/executable-book-template",
+        repoProvider: "github"
     },
     }
 </script>
