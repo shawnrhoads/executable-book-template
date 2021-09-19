@@ -6,7 +6,7 @@ You can use the materials in this [GitHub repository](https://github.com/shawnrh
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
 
-<script type="text/x-thebe-config">
+<!-- <script type="text/x-thebe-config">
      {
        requestKernel: true,
        binderOptions: {
@@ -15,6 +15,16 @@ You can use the materials in this [GitHub repository](https://github.com/shawnrh
          repoProvider: "github",
        },
      }
+</script> -->
+<script type="text/x-thebe-config">
+    {
+    requestKernel: true,
+    binderOptions: {
+        repo: "shawnrhoads/executable-book-template",
+        ref: "main",
+        repoProvider: "github"
+    },
+    }
 </script>
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
    
