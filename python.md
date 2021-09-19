@@ -1,3 +1,8 @@
+---
+permalink: /
+layout: home
+title: Python Code
+---
 This page contains supplemental interactive Python code for the following project:
 
 <blockquote>Rhoads, S. A. (2021). An executable notebook template to enhance interactivity with research objects. The Journal of XYZ.</blockquote>
