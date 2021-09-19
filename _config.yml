@@ -1,5 +1,12 @@
 title: Executable Notebook Template
-
+author: "Shawn A Rhoads"
 show_excerpts: false # set to true to show excerpts on the homepage
+
+base_url: /executable-notebook-template
+
+# Minima: custom header links
+header_pages:
+  - python.md
+  - R.md
 
 theme: minima
