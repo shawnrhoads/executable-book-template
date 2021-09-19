@@ -3,6 +3,7 @@ numpy==1.20.2
 scipy==1.6.0
 matplotlib==3.3.4
 seaborn==0.11.1
+ipywidgets==7.6.3
 rpy2==3.4.5
 nibabel==3.2.1
 nilearn==0.7.1
