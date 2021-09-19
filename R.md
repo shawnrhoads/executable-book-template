@@ -18,6 +18,10 @@ This page contains supplemental interactive R code for the following project:
     binderOptions: {
         repo: "binder-examples/r"
     },
+    kernelOptions: {
+      name: "R",
+      kernelName: "ir",
+    }
     }
 </script>
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>

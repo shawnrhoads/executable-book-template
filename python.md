@@ -26,7 +26,8 @@ This page contains supplemental interactive Python code for the following projec
     {
     requestKernel: true,
     binderOptions: {
-        repo: "shawnrhoads/executable-book-template"
+        repo: "shawnrhoads/executable-book-template",
+        binderUrl: "https://mybinder.org"
     },
     }
 </script>
