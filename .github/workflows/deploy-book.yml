@@ -31,8 +31,8 @@ jobs:
     - name: Setup Miniconda
       uses: conda-incubator/setup-miniconda@v2
       with:
-        activate-environment: jupyter-book-env
-        environment-file: jupyter-book-env.yml
+        activate-environment: exec-book-template
+        environment-file: exec-book-template.yml
         python-version: 3.7
         channels: conda-forge
         auto-activate-base: false
@@ -42,7 +42,7 @@ jobs:
       run: |
         conda info
         conda list
-        conda activate jupyter-book-env
+        conda activate exec-book-template
         jupyter nbextension enable --py widgetsnbextension
         jupyter-book build docs
 
