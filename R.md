@@ -17,6 +17,10 @@ This page contains supplemental interactive R code for the following project:
     requestKernel: true,
     binderOptions: {
         repo: "binder-examples/r"
+    },
+    kernelOptions: {
+      name: "R",
+      kernelName: "ir",
     }
     }
 </script>
