@@ -21,3 +21,4 @@ dependencies:
   - pip:
     - jupyter-book==0.10.2
     - insipid-sphinx-theme
+    - sphinx-bootstrap-theme

@@ -16,6 +16,7 @@ execute:
   execute_notebooks: auto  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
   cache: ""  # A path to the jupyter cache that will be used to store execution artifacs. Defaults to `_build/.jupyter_cache/`
   exclude_patterns: []  # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
+  stderr_output: remove-warn
 
 #######################################################################################
 
@@ -56,7 +57,7 @@ launch_buttons:
 sphinx:
   extra_extensions:   # A list of extra extensions to load by Sphinx.
   config:   # key-value pairs to directly over-ride the Sphinx configuration
-    html_theme: insipid
+    html_theme: bootstrap #html_theme: insipid
     html_permalinks_icon: '§'
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
