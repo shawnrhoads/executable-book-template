@@ -18,3 +18,4 @@ dependencies:
   - ipywidgets
   - pip:
     - jupyter-book==0.10.2
+    - sphinx-bootstrap-theme

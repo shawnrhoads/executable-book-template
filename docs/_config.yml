@@ -57,7 +57,7 @@ sphinx:
   extra_extensions:   # A list of extra extensions to load by Sphinx.
   config:   # key-value pairs to directly over-ride the Sphinx configuration
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    html_theme: minima
+    html_theme: sphinx-bootstrap-theme
 
 
 latex:
