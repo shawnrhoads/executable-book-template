@@ -16,11 +16,9 @@ This page contains supplemental interactive Python code for the following projec
     {
     requestKernel: true,
     binderOptions: {
-        repo: "nilearn/nilearn",
+         repo: "nilearn/nilearn",
+         ref: "0.8.1",
     },
-      kernelOptions: {
-        name: "python3",
-      },
     }
 </script>
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
