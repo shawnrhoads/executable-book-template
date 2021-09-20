@@ -29,6 +29,9 @@ This page contains supplemental interactive Python code for the following projec
         repo: "shawnrhoads/executable-book-template",
         binderUrl: "https://mybinder.org"
     },
+      kernelOptions: {
+        name: "python3",
+      },
     }
 </script>
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>

@@ -27,7 +27,7 @@ This page contains supplemental interactive R code for the following project:
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
    
 <button id="activateButton" style="font-size: 1em;">
-    Click here to interact with the visualizations
+    Click here to interact with the code
 </button>
 
 <script>
