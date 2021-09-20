@@ -165,72 +165,31 @@
 <img alt="_images/study1_2_0.png" src="_images/study1_2_0.png" />
 </div>
 </div>
-<p>We can also interact with our data.</p>
 </div>
-<div class="section" id="supplemental-figure-2">
-<h2>Supplemental Figure 2<a class="headerlink" href="#supplemental-figure-2" title="Permalink to this headline">¶</a></h2>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-<script type="text/x-thebe-config">
-     {
-       requestKernel: true,
-       binderOptions: {
-         repo: "matplotlib/ipympl",
-         ref: "0.6.1",
-         repoProvider: "github",
-       },
-     }
-</script>
-<script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-<button id="activateButton" style="font-size: 1em;">
-    Click here to interact with the code
-</button>
-<script>
-var bootstrapThebe = function() {
-   thebelab.bootstrap();
-}
-document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
-</script>
-<br>
-<pre data-executable="true" data-language="python">
-# interactive display
-import matplotlib.pyplot as plt
-import ipywidgets as widgets
-import numpy as np
+<div class="section" id="table-1">
+<h2>Table 1<a class="headerlink" href="#table-1" title="Permalink to this headline">¶</a></h2>
+<p>Summary of regression results.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">linregress</span>
 
-# set up data
-np.random.seed(2021)
-x0 = np.ones((250, 1))
-x1 = np.random.normal(loc=0,scale=1,size=(250,1))
-X = np.hstack((x0, x1))
-noise = np.random.normal(2, 3, (250,1)) 
-y = .85 + 1.05 * x1 + noise
+<span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">se</span> <span class="o">=</span> <span class="n">linregress</span><span class="p">(</span><span class="n">x1</span><span class="o">.</span><span class="n">flatten</span><span class="p">(),</span> <span class="n">y</span><span class="o">.</span><span class="n">flatten</span><span class="p">())</span>
+<span class="k">if</span> <span class="n">p</span> <span class="o">&lt;</span> <span class="mf">.001</span><span class="p">:</span>
+    <span class="n">p_val</span> <span class="o">=</span> <span class="s1">&#39;p&lt;.001&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">p_val</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;p=</span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span>
 
-@widgets.interact(beta_hat=widgets.FloatSlider(1.05, min=-2, max=2),
-                  intercept=widgets.FloatSlider(.85, min=0, max=1))
-def plot_data_estimate(intercept, beta_hat):
-    # compute error
-    y_hat = (intercept*X[:,0] + beta_hat*X[:,1]).reshape(len(y),1)
-    MSE_val = np.mean((y - y_hat)**2)
-    
-    # plot
-    fig, ax = plt.subplots()
-    ax.scatter(X[:,1], y, label='Observed')  # our data scatter plot
-    ax.plot(X[:,1], y_hat, color='r', label='Fit')  # our estimated model
-
-    # plot residuals
-    ymin = np.minimum(y, y_hat)
-    ymax = np.maximum(y, y_hat)
-    ax.vlines(X[:,1], ymin, ymax, 'g', alpha=0.5, label='Residuals')
-
-    ax.set(
-        title=f"intercept={intercept:0.2f}, beta = {beta_hat:0.2f}, MSE = {MSE_val:.2f}",
-        xlabel='x',
-        ylabel='y')
-    
-    ax.legend()
-    plt.show()
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;For every unit increase in x, the predicted value of y increases by </span><span class="si">{</span><span class="n">slope</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> units (β1=</span><span class="si">{</span><span class="n">slope</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, SE=</span><span class="si">{</span><span class="n">se</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">p_val</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For every unit increase in x, the predicted value of y increases by 2.87 units (β1=2.87, SE=0.18, p&lt;.001)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
