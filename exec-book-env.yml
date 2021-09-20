@@ -1,4 +1,4 @@
-name: jupyter-book-env
+name: exec-book-template
 channels:
   - default
   - conda-forge
