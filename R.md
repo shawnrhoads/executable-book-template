@@ -17,10 +17,6 @@ This page contains supplemental interactive R code for the following project:
     requestKernel: true,
     binderOptions: {
         repo: "binder-examples/r"
-    },
-    kernelOptions: {
-      name: "R",
-      kernelName: "ir",
     }
     }
 </script>
@@ -40,7 +36,7 @@ document.querySelector("#activateButton").addEventListener('click', bootstrapThe
 
 ## Figure 1
 
-<pre data-executable="true" data-language="python">
+<pre data-executable="true" data-language="r">
 x <- 33
 print(x)
 </pre>
