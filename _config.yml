@@ -7,6 +7,7 @@ base_url: /executable-notebook-template
 # Minima: custom header links
 header_pages:
   - python.md
+  - fmri.md
   - R.md
 
 theme: minima

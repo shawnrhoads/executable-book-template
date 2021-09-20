@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /python
 layout: home
 title: Python Code
 ---
@@ -12,7 +12,7 @@ This page contains supplemental interactive Python code for the following projec
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
 
-<!-- <script type="text/x-thebe-config">
+<script type="text/x-thebe-config">
      {
        requestKernel: true,
        binderOptions: {
@@ -21,23 +21,11 @@ This page contains supplemental interactive Python code for the following projec
          repoProvider: "github",
        },
      }
-</script> -->
-<script type="text/x-thebe-config">
-    {
-    requestKernel: true,
-    binderOptions: {
-        repo: "shawnrhoads/executable-book-template",
-        binderUrl: "https://mybinder.org"
-    },
-      kernelOptions: {
-        name: "python3",
-      },
-    }
 </script>
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
    
 <button id="activateButton" style="font-size: 1em;">
-    Click here to interact with the visualizations
+    Click here to interact with the code
 </button>
 
 <script>
@@ -89,45 +77,4 @@ def plot_data_estimate(intercept, beta_hat):
     
     ax.legend()
     plt.show()
-</pre>
-
-## Figure 2
-<!-- 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-
-<script type="text/x-thebe-config">
-    {
-    requestKernel: true,
-    binderOptions: {
-        repo: "shawnrhoads/executable-book-template",
-        repoProvider: "github"
-    },
-    }
-</script>
-<script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-   
-<button id="activateButton" style="font-size: 1em;">
-    Click here to interact with this visualization
-</button>
-
-<script>
-var bootstrapThebe = function() {
-   thebelab.bootstrap();
-}
-document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
-</script> -->
-
-<pre data-executable="true" data-language="python">
-import nibabel as nib
-from nilearn.plotting import view_img
-import ipywidgets as widgets
-
-def plot_data(threshold):
-    zmap = nib.load('data/unthresh_Z.nii.gz')
-    image = view_img(zmap, threshold=threshold)
-    return image
-
-widgets.interact(plot_data, threshold=widgets.FloatSlider(2.8, min=0, max=4))
 </pre>
