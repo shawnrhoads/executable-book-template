@@ -2,6 +2,8 @@ name: executable-notebook-template
 channels:
   - conda-forge
 dependencies:
+  - python=3.7.*
+  - pip
   - pandas
   - numpy
   - jupyterlab=3

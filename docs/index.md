@@ -1,8 +1,3 @@
----
-permalink: /fMRI
-layout: home
-title: fMRI Code
----
 This page contains supplemental interactive Python code for the following project:
 
 <blockquote>Rhoads, S. A. (2021). An executable notebook template to enhance interactivity with research objects. The Journal of Examples.</blockquote>
@@ -15,8 +10,7 @@ This page contains supplemental interactive Python code for the following projec
      {
        requestKernel: true,
        binderOptions: {
-         repo: "nilearn/nilearn",
-         ref: "0.8.1",
+         repo: "shawnrhoads/executable-notebook-template",
          repoProvider: "github",
        },
      }
@@ -35,7 +29,7 @@ document.querySelector("#activateButton").addEventListener('click', bootstrapThe
 </script>
 <br>
 
-## Figure 2
+## Figure 1
 <pre data-executable="true" data-language="python">
 import nibabel as nib
 from nilearn.plotting import view_img
