@@ -25,6 +25,8 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -154,6 +156,65 @@
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="logistic-regression">
+<h2>Logistic Regression<a class="headerlink" href="#logistic-regression" title="Permalink to this headline">¶</a></h2>
+<p>This is a logistic regression predicting survival of passengers.</p>
+<p>Independent variables:</p>
+<ul class="simple">
+<li><p>age (<span class="math notranslate nohighlight">\(x1\)</span>)</p></li>
+<li><p>sex (<span class="math notranslate nohighlight">\(x2\)</span>)</p></li>
+<li><p>class (<span class="math notranslate nohighlight">\(x3\)</span>)</p></li>
+</ul>
+<p>Dependent variable:</p>
+<ul class="simple">
+<li><p>survived (<span class="math notranslate nohighlight">\(y\)</span>)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">logit_m</span> <span class="o">&lt;-</span> <span class="nf">glm</span><span class="p">(</span><span class="n">survived</span> <span class="o">~</span> <span class="n">age</span> <span class="o">+</span> <span class="n">sex</span> <span class="o">+</span> <span class="n">class</span><span class="p">,</span> <span class="n">titanic</span><span class="p">,</span> <span class="n">family</span><span class="o">=</span><span class="nf">binomial</span><span class="p">(</span><span class="n">link</span><span class="o">=</span><span class="s">&quot;logit&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">summary</span><span class="p">(</span><span class="n">logit_m</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Call:
+glm(formula = survived ~ age + sex + class, family = binomial(link = &quot;logit&quot;), 
+    data = titanic)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.7303  -0.6780  -0.3953   0.6485   2.4657  
+
+Coefficients:
+             Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)  3.777013   0.401123   9.416  &lt; 2e-16 ***
+age         -0.036985   0.007656  -4.831 1.36e-06 ***
+sexmale     -2.522781   0.207391 -12.164  &lt; 2e-16 ***
+classSecond -1.309799   0.278066  -4.710 2.47e-06 ***
+classThird  -2.580625   0.281442  -9.169  &lt; 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 964.52  on 713  degrees of freedom
+Residual deviance: 647.28  on 709  degrees of freedom
+  (177 observations deleted due to missingness)
+AIC: 657.28
+
+Number of Fisher Scoring iterations: 5
+</pre></div>
+</div>
+</div>
+</div>
+<p>Age, sex, and class were all associated with probability of surviving</p>
 </div>
 </div>
 
