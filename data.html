@@ -37,7 +37,7 @@
     <link rel="canonical" href="https://shawnrhoads.github.io/executable-notebooks-template/data.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Study 1" href="study1.html" />
+    <link rel="next" title="Preprocessing" href="preproc.html" />
     <link rel="prev" title="Executable Book Template" href="index.html" />
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -100,7 +100,7 @@
       <a href="index.html" class="nav-icon previous" title="previous:&#13;Executable Book Template" aria-label="Previous topic" accesskey="P" tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
       </a>
-      <a href="study1.html" class="nav-icon next" title="next:&#13;Study 1" aria-label="Next topic" accesskey="N" tabindex="-1">
+      <a href="preproc.html" class="nav-icon next" title="next:&#13;Preprocessing" aria-label="Next topic" accesskey="N" tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
       </a>
     </nav>
@@ -117,11 +117,11 @@
           </span>
         </div>
       </a>
-      <a class="next" href="study1.html" aria-label="Next topic" >
+      <a class="next" href="preproc.html" aria-label="Next topic" >
         <div class="title">
           <span class="text">
             <span class="direction">next</span>
-            Study 1
+            Preprocessing
           </span>
         </div>
         <div class="icon">
@@ -273,9 +273,7 @@
 <h2>Supplemental Figure 1<a class="headerlink" href="#supplemental-figure-1" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">,</span> <span class="n">color_codes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;sex&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;survived&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;class&quot;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">titanic</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;sex&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;survived&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;class&quot;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">titanic</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -284,7 +282,7 @@
 <img alt="_images/data_4_0.png" src="_images/data_4_0.png" />
 </div>
 </div>
-<p><a href="https://colab.research.google.com/github/shawnrhoads/executable-notebook-template/blob/main/docs/data.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<p><a href="https://colab.research.google.com/github/shawnrhoads/executable-book-template/blob/main/docs/data.ipynb" target="_blank" style text-align="center"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 </div>
 </div>
 
@@ -326,11 +324,11 @@
           </span>
         </div>
       </a>
-      <a class="next" href="study1.html" aria-label="Next topic" >
+      <a class="next" href="preproc.html" aria-label="Next topic" >
         <div class="title">
           <span class="text">
             <span class="direction">next</span>
-            Study 1
+            Preprocessing
           </span>
         </div>
         <div class="icon">
@@ -348,10 +346,10 @@
 <h3><a href="index.html">Table of Contents</a></h3>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preproc.html">Preprocessing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="study1.html">Study 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="study2.html">Study 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Python.html">Python Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="R.html">R Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 </ul>
 
 <hr class="docutils" />

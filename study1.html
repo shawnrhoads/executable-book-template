@@ -38,7 +38,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Study 2" href="study2.html" />
-    <link rel="prev" title="Data" href="data.html" />
+    <link rel="prev" title="Preprocessing" href="preproc.html" />
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
   </head>
@@ -97,7 +97,7 @@
       </div>
     </header>
     <nav>
-      <a href="data.html" class="nav-icon previous" title="previous:&#13;Data" aria-label="Previous topic" accesskey="P" tabindex="-1">
+      <a href="preproc.html" class="nav-icon previous" title="previous:&#13;Preprocessing" aria-label="Previous topic" accesskey="P" tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
       </a>
       <a href="study2.html" class="nav-icon next" title="next:&#13;Study 2" aria-label="Next topic" accesskey="N" tabindex="-1">
@@ -106,14 +106,14 @@
     </nav>
 
     <nav class="relbar">
-      <a class="previous" href="data.html" aria-label="Previous topic" >
+      <a class="previous" href="preproc.html" aria-label="Previous topic" >
         <div class="icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
         </div>
         <div class="title">
           <span class="text">
             <span class="direction">previous</span>
-            Data
+            Preprocessing
           </span>
         </div>
       </a>
@@ -179,12 +179,14 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="n">p_val</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;p=</span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;For every unit increase in x, the predicted value of y increases by </span><span class="si">{</span><span class="n">slope</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> units (β1=</span><span class="si">{</span><span class="n">slope</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, SE=</span><span class="si">{</span><span class="n">se</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">p_val</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;For every unit increase in x, the predicted value of y increases by </span><span class="si">{</span><span class="n">slope</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> units.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;β1=</span><span class="si">{</span><span class="n">slope</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, SE=</span><span class="si">{</span><span class="n">se</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">p_val</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For every unit increase in x, the predicted value of y increases by 2.87 units (β1=2.87, SE=0.18, p&lt;.001)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For every unit increase in x, the predicted value of y increases by 2.87 units.
+β1=2.87, SE=0.18, p&lt;.001)
 </pre></div>
 </div>
 </div>
@@ -219,14 +221,14 @@
     </div>
 
     <nav class="relbar">
-      <a class="previous" href="data.html" aria-label="Previous topic" >
+      <a class="previous" href="preproc.html" aria-label="Previous topic" >
         <div class="icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
         </div>
         <div class="title">
           <span class="text">
             <span class="direction">previous</span>
-            Data
+            Preprocessing
           </span>
         </div>
       </a>
@@ -252,10 +254,10 @@
 <h3><a href="index.html">Table of Contents</a></h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="data.html">Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preproc.html">Preprocessing</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Study 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="study2.html">Study 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Python.html">Python Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="R.html">R Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 </ul>
 
 <hr class="docutils" />
