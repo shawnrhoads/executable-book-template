@@ -26,7 +26,7 @@ html:
   use_edit_page_button: false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button: false  # Whether to add a link to your repository button
   use_issues_button: false  # Whether to add an "open an issue" button
-  extra_navbar: Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+  extra_navbar: ""  # Will be displayed underneath the left navbar.
   extra_footer: ""  # Will be displayed underneath the footer.
   home_page_in_navbar: false  # Whether to include your home page in the left Navigation Bar
   baseurl: https://shawnrhoads.github.io/executable-notebooks-template  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
@@ -56,6 +56,7 @@ launch_buttons:
 sphinx:
   extra_extensions:   # A list of extra extensions to load by Sphinx.
   config:   # key-value pairs to directly over-ride the Sphinx configuration
+    html_theme: pydata_sphinx_theme
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 latex:
