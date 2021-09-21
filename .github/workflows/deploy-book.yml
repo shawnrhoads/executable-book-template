@@ -43,6 +43,7 @@ jobs:
         conda info
         conda list
         conda activate exec-book-template
+        cp README.md docs/getting-started.md
         jupyter nbextension enable --py widgetsnbextension
         jupyter-book build docs
 
