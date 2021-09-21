@@ -1,10 +1,12 @@
 # Getting Started
 
+[![DOI](https://zenodo.org/badge/404462223.svg)](https://zenodo.org/badge/latestdoi/404462223)
+
 This Jupyter Book is a template for others to compile supplemental materials (e.g., code, visualizations) for their projects into their own Jupyter Book website.
 
 If you use this template, please use the following citation:
 
-<blockquote>Rhoads, S. A. (2021). Executable Book Template. Zenodo.</blockquote>
+<blockquote>Rhoads, S. A. (2021). Executable book template. Zenodo. https://doi.org/10.5281/zenodo.5519746</blockquote>
 
 ## How to use this template
 
