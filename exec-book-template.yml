@@ -9,18 +9,17 @@ dependencies:
   - sphinx=2.4.4
   - pip
   - runjb
-  - git
-  - pandas
-  - scipy
-  - numpy
-  - matplotlib
-  - seaborn
+  - r-irkernel
+  - pandas=1.0.4
+  - scipy=1.4.1
+  - numpy=1.18.5
+  - matplotlib=3.2.1
+  - seaborn=0.10.1
   - nibabel=3.2.1
   - nilearn=0.7.1
   - widgetsnbextension
-  - ipywidgets
-  - r-irkernel
+  - ipywidgets=7.6.3
   - pip:
     - jupyter-book==0.10.2
-    - insipid-sphinx-theme
-    - sphinx-bootstrap-theme
+    - insipid-sphinx-theme; platform_system != "Windows"
+    - sphinx-bootstrap-theme; platform_system != "Windows"
