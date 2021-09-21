@@ -5,7 +5,6 @@ This Jupyter Book is a template for others to compile supplemental materials (e.
 If you use this template, please use the following citation:
 
 <blockquote>Rhoads, S. A. (2021). Executable Book Template. Zenodo.</blockquote>
-<br>
 
 ## How to use this template
 
