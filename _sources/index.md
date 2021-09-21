@@ -1,8 +1,8 @@
 # Executable Book Template
 
-This Jupyter Book contains supplemental interactive code for the following project:
+This Jupyter Book contains supplemental code and visualizations for the following project:
 
-<blockquote>Rhoads, S. A. (2021). An executable notebook template to enhance interactivity with research objects. The Journal of Examples.</blockquote>
+<blockquote>Rhoads, S. A. (2021). An executable notebook template to enhance interactivity with research objects: An Example Citation. The Journal of Examples.</blockquote>
 <br>
 
-To run the included notebooks locally, clone this [GitHub repository](https://github.com/shawnrhoads/executable-book-template) and run the following command in [Anaconda](https://www.anaconda.com/products/individual#Downloads): `conda env create -f exec-book-template.yml`
+Please visit the [Getting Started](https://shawnrhoads.github.io/executable-book-template/getting-started.html) page to **use this template for your own projects**!

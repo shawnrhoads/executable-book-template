@@ -23,13 +23,13 @@ Here is a list of all files and descriptions included in this repository:
 
 **Files required to build book**
 - `.github/workflows/deploy-book.yml`: Text file containing the ingredients to run a [GitHub action](https://github.com/features/actions) that builds the Jupyter Book. This action will execute whenever you commit a change to the `main` branch.
-- `exec-book-template.yml`: Text file containing all of the packages required to execute your `*ipynb` files. It is used to build an [Anaconda](https://www.anaconda.com/products/individual#Downloads) environment (i.e., using the following command: `conda env create -f exec-book-template.yml`). You can modify any channels or dependencies to meet your needs. However, you will need to keep `pip` and `jupyter-book==0.10.2`. If you change the name of this file or environment, then you will also need to edit `.github/workflows/deploy-book.yml`. 
+- `exec-book-template.yml`: Text file containing all of the packages required to execute your `*ipynb` files. It is used to create an [Anaconda](https://www.anaconda.com/products/individual#Downloads) environment (i.e., using the following command: `conda env create -f exec-book-template.yml`). You can modify any channels or dependencies (and versions) to meet your needs. However, you will need to keep `pip` and `jupyter-book==0.10.2`. If you change the name of this file or environment, then you will also need to edit `.github/workflows/deploy-book.yml`. 
 - `docs/_config.yml`: Text file containing the ingredients to build your Jupyter Book. See [this page](https://jupyterbook.org/customize/config.html) for more information.
 - `docs/_toc.yml`: Text file containing the ingredients to build your Jupyter Book table of contents. See [this page](https://jupyterbook.org/structure/configure.html) for more information.
 
 **Optional files**
 - `LICENSE`: Text file containing the license for this template. You may [change this](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#searching-github-by-license-type) to fit your project's needs.
-- `README.md`: Markdown file that should be updated to reflect the contents of your project. This will automatically serve as the `getting-started` page for your Jupyter Book website.
+- `README.md`: Markdown file that should be updated to reflect the contents of your project. This will automatically serve as the `getting-started` page for your Jupyter Book website. See built webpage [here](https://shawnrhoads.github.io/executable-book-template/getting-started.html). 
 - `.gitignore`: Text file containing specific extensions that you want Git/GitHub to ignore.
 - `docs/slides/*pdf`: Slides for Jupyter for Neuroimagers workshop.
 - `docs/data/*csv`: Example comma-separated dataset.
@@ -45,4 +45,12 @@ Here is a list of all files and descriptions included in this repository:
 
 ### Hosting your Jupyter Book
 
-Once you have added, modified, or deleted any necessary files for your project, then you can publish it via GitHub Pages! To do this, go to your repository Settings > Pages, then make sure your "GitHub Pages site is currently being built from the `gh-pages` branch" and save. Your Jupyter Book should be built using 
+Once you have added, modified, or deleted any necessary files for your project, then you can publish it via GitHub Pages! To do this, go to your repository Settings > Pages, then make sure your "GitHub Pages site is currently being built from the `gh-pages` branch" and save.
+
+
+## Other tips and tricks
+
+- Please visit the [Jupyter Book](https://jupyterbook.org) for more ways to customize your Jupyter Book!
+- [Here](https://jupyterbook.org/interactive/interactive.html) is some information regarding interactive data visualizations.
+- This template uses the [Insipid Sphinx Theme](https://github.com/mgeier/insipid-sphinx-theme), but other themes can be found [here](https://sphinx-themes.org/). The [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/en/latest/) is the default.
+- Gain inspiration from other Jupyter Books [here](https://executablebooks.org/en/latest/gallery.html)!
