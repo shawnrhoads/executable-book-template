@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5519745.svg)](https://doi.org/10.5281/zenodo.5519745)
 
-This Jupyter Book is a template for others to compile supplemental materials (e.g., code, visualizations) for their projects into their own Jupyter Book website.
+This is a template for others to compile supplemental materials (e.g., code, visualizations) from their projects into a Jupyter Book website.
 
 If you use this template, please use the following citation:
 
