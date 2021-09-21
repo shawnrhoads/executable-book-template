@@ -1,8 +1,9 @@
 - file: index
+- file: getting-started
 - file: data
 - file: preproc
 - file: study1
 - file: study2
 - file: jupyter
-- file: Python
 - file: R
+- file: Python
