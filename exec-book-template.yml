@@ -3,12 +3,10 @@ channels:
   - default
   - conda-forge
   - r
-  - eoas_ubc
 dependencies:
   - python=3.7.*
   - sphinx=2.4.4
   - pip
-  - runjb
   - r-irkernel
   - pandas
   - scipy
