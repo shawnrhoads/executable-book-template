@@ -146,23 +146,14 @@
 <p>The Jupyter Notebook is an open source web application that you can use to create and share documents that contain live code, equations, visualizations, and text. Jupyter Notebook is maintained by the people at <a href="http://jupyter.org/">Project Jupyter</a>.</p>
 <p>Jupyter Notebooks are a spin-off project from the IPython project, which used to have an IPython Notebook project itself. The name, Jupyter, comes from the core supported programming languages that it supports: Julia, Python, and R. Jupyter ships with the IPython kernel, which allows you to write your programs in Python, but there are currently over 100 other kernels that you can also use.</p>
 </blockquote>
-<p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> (which we’ve just downloaded) comes with many scientific libraries preinstalled, including the Jupyter Notebook!</p>
-</div>
-<div class="section" id="starting-a-jupyter-notebook-server">
-<h2>Starting a Jupyter Notebook server<a class="headerlink" href="#starting-a-jupyter-notebook-server" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Open your terminal application (<strong>Terminal</strong> on MacOS, <strong>Anaconda Prompt</strong> on Windows)</p></li>
-<li><p>Change your current directory to a location on your computer where you would like to save your notebook (for example: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/Users/home/notebooks</span></code>)</p></li>
-<li><p>Run the command <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> which will start your default browser (or open a new tab) to the following URL: <a class="reference external" href="http://localhost:8888/tree">http://localhost:8888/tree</a></p></li>
-</ol>
-<p>Your browser should look something like this:</p>
+<p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> comes with many scientific libraries preinstalled, including the Jupyter Notebook!</p>
 </div>
 <div class="section" id="interactive-coding">
 <h2>Interactive Coding!!<a class="headerlink" href="#interactive-coding" title="Permalink to this headline">¶</a></h2>
-<p>We will use Jupyter Notebooks to interface with Python. Rather than keeping code scripts code and execution separate, jupyter integrates both together using the concept of cells. Two main types of cells are <strong>code cells</strong> and <strong>markdown cells</strong>. Cells pair “snippets” of code with the output obtained from running them and can contain plots/figure inline alongside code required to generate them</p>
-<p><strong>Code cells</strong> contain actual code that you want to run. You can specify a cell as a code cell using the pulldown menu in the toolbar in your Jupyter notebook. Otherwise, you can can hit esc and then y (denoted “esc, y”) while a cell is selected to specify that it is a code cell. Note that you will have to hit enter after doing this to start editing it. If you want to execute the code in a code cell, hit “shift + enter.” Note that code cells are executed in the order you execute them. That is to say, the ordering of the cells for which you hit “shift + enter” is the order in which the code is executed. If you did not explicitly execute a cell early in the document, its results are now known to the Python interpreter.</p>
-<p><strong>Markdown cells</strong> contain text. The text is written in markdown, a lightweight markup language. You can read about its syntax <a class="reference external" href="https://daringfireball.net/projects/markdown/syntax">here</a>. Note that you can also insert HTML into markdown cells, and this will be rendered properly. As you are typing the contents of these cells, the results appear as text. Hitting “shift + enter” renders the text in the formatting you specify. You can specify a cell as being a markdown cell in the Jupyter toolbar, or by hitting “esc, m” in the cell. Again, you have to hit enter after using the quick keys to bring the cell into edit mode.</p>
-<p>In general, when you want to add a new cell, you can use the “Insert” pulldown menu from the Jupyter toolbar. The shortcut to insert a cell below is “esc, b” and to insert a cell above is “esc, a.” Alternatively, you can execute a cell and automatically add a new one below it by hitting “alt + enter.”</p>
+<p>We will use Jupyter Notebooks to interface with Python. Rather than keeping code scripts code and execution separate, jupyter integrates both together using the concept of cells. Two main types of cells are <strong>markdown cells</strong> and <strong>code cells</strong>. Cells pair “snippets” of code with the output obtained from running them and can contain plots/figure inline alongside code required to generate them</p>
+<p><strong>Markdown cells</strong> contain text. The text is written in markdown, a lightweight markup language. You can read about its syntax <a class="reference external" href="https://daringfireball.net/projects/markdown/syntax">here</a>. Note that you can also insert HTML into markdown cells, and this will be rendered properly. As you are typing the contents of these cells, the results appear as text. Hitting “shift + enter” renders the text in the formatting you specify. You can specify a cell as being a markdown cell in the Jupyter toolbar, or by hitting the “esc” then “m” keys in the cell. You have to hit enter after using the quick keys to bring the cell into edit mode.</p>
+<p><strong>Code cells</strong> contain actual code that you want to run. You can specify a cell as a code cell using the pulldown menu in the toolbar in your Jupyter notebook, or by hitting the “esc” then “y” keys in the cell. Again, you have to hit enter after using the quick keys to bring the cell into edit mode. If you want to execute the code in a code cell, hit “shift + enter.” Note that code cells are executed in the order you execute them (i.e., the ordering of the cells for which you hit “shift + enter” is the order in which the code is executed). If you did not explicitly execute a cell early in the document, its results are not known to the Python interpreter.</p>
+<p>When you want to add a new cell, you can use the “Insert” pulldown menu from the Jupyter toolbar. The shortcut to insert a cell below is “esc” then “b” and to insert a cell above is “esc” then “a”;  Alternatively, you can execute a cell and automatically add a new one below it by hitting “alt + enter.”</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a code cell</span>
@@ -179,20 +170,11 @@
 </div>
 </div>
 </div>
-<div class="section" id="notebooks-of-the-future">
-<h2>Notebooks of the Future<a class="headerlink" href="#notebooks-of-the-future" title="Permalink to this headline">¶</a></h2>
-<p>Not just for code:</p>
-<ul class="simple">
-<li><p>Markdown, HTML, LateX integration</p></li>
-<li><p>Slide shows</p></li>
-<li><p>Keep your notes alongside your analysis routines</p></li>
-<li><p>Embed images, videos, anything (it’s all just HTML + javascript)</p></li>
-</ul>
 <div class="section" id="markdown">
-<h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
+<h2>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h2>
 <p>See this <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">comprehensive guide to Markdown</a> or <a class="reference external" href="https://www.markdowntutorial.com/">Tutorial</a>. Here are some examples:</p>
 <div class="section" id="emphasis">
-<h4>Emphasis<a class="headerlink" href="#emphasis" title="Permalink to this headline">¶</a></h4>
+<h3>Emphasis<a class="headerlink" href="#emphasis" title="Permalink to this headline">¶</a></h3>
 <p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
 <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
 <p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
@@ -209,7 +191,7 @@
 </div>
 </div>
 <div class="section" id="links">
-<h4>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h4>
+<h3>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://www.google.com">I’m an inline-style link</a></p>
 <p><a class="reference external" href="https://www.mozilla.org">I’m a reference-style link</a></p>
 <p><a class="reference external" href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
@@ -240,7 +222,7 @@
 </div>
 </div>
 <div class="section" id="tables">
-<h4>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h4>
+<h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h3>
 <p>Colons can be used to align columns.</p>
 <table class="colwidths-auto docutils align-default">
 <thead>
@@ -303,7 +285,7 @@ Markdown | Less | Pretty
 </div>
 </div>
 <div class="section" id="html-css-integration">
-<h3>HTML/CSS Integration:<a class="headerlink" href="#html-css-integration" title="Permalink to this headline">¶</a></h3>
+<h2>HTML/CSS Integration:<a class="headerlink" href="#html-css-integration" title="Permalink to this headline">¶</a></h2>
 <p><font color=red>This is a</font> <em>markdown</em> <strong>cell</strong>!</p>
 <p>The text above looks like this behind the scenes:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;font color=red&gt;This is a&lt;/font&gt; *markdown* **cell**!
@@ -311,7 +293,7 @@ Markdown | Less | Pretty
 </div>
 </div>
 <div class="section" id="latex-integration">
-<h3>LaTeX Integration:<a class="headerlink" href="#latex-integration" title="Permalink to this headline">¶</a></h3>
+<h2>LaTeX Integration:<a class="headerlink" href="#latex-integration" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{5}n\]</div>
 <p>The equation above looks like this behind the scenes:</p>
@@ -319,55 +301,18 @@ Markdown | Less | Pretty
 </pre></div>
 </div>
 </div>
-<div class="section" id="inserting-images-from-web">
-<h3>Inserting images from web<a class="headerlink" href="#inserting-images-from-web" title="Permalink to this headline">¶</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span> 
-
-<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/Summer-MIND/mind_2018/master/tutorials/jupyter/demo.gif&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;IPython.core.display.Image object&gt;
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="multilingual">
-<h3>Multilingual!<a class="headerlink" href="#multilingual" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>Julia</p></li>
-<li><p>Python (multiple versions together)</p></li>
-<li><p>R</p></li>
-<li><p>150 other languages (<a class="reference external" href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels">https://github.com/jupyter/jupyter/wiki/Jupyter-kernels</a>)</p></li>
-</ul>
-</div>
 <div class="section" id="save-notebooks-in-other-formats-and-put-them-online">
-<h3>Save notebooks in other formats and put them online<a class="headerlink" href="#save-notebooks-in-other-formats-and-put-them-online" title="Permalink to this headline">¶</a></h3>
+<h2>Save notebooks in other formats and put them online<a class="headerlink" href="#save-notebooks-in-other-formats-and-put-them-online" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Github automatically renders jupyter notebooks</p></li>
 <li><p><a class="reference external" href="http://nbviewer.jupyter.org/">Online notebook viewer</a></p></li>
 <li><p>Output to PDF, HTML (including javascript)</p></li>
 <li><p><a class="reference external" href="https://github.com/jupyterhub/jupyterhub">Jupyterhub</a>: code with friends!</p></li>
+<li><p><a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a></p></li>
 </ul>
 </div>
-<div class="section" id="customize-your-notebook-experience-with-extensions">
-<h3>Customize your notebook experience with extensions<a class="headerlink" href="#customize-your-notebook-experience-with-extensions" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>Table of Contents</p></li>
-<li><p>Execution time/Profiling</p></li>
-<li><p>Scratch Space</p></li>
-<li><p>Code/Section folding</p></li>
-<li><p>Look and feel (CSS+Javascript)</p></li>
-<li><p>Other notebook extensions</p></li>
-</ul>
-</div>
-<div class="section" id="for-more">
-<h3>For more…<a class="headerlink" href="#for-more" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="additional-resources">
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/Summer-MIND/mind_2018/tree/master/tutorials/jupyter">Eshin Jolly - Intro to Jupyter Notebooks</a></p></li>
 <li><p><a class="reference external" href="https://github.com/jakevdp/PythonDataScienceHandbook">Jake Vanderplas - Data Science Handbook</a></p></li>
@@ -378,7 +323,6 @@ Markdown | Less | Pretty
 <li><p><a class="reference external" href="https://colab.research.google.com/notebooks/welcome.ipynb#recent=true">Google Colaboratory</a></p></li>
 </ul>
 <p><a href="https://colab.research.google.com/github/shawnrhoads/executable-book-template/blob/main/docs/jupyter.ipynb" target="_blank" style text-align="center"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
-</div>
 </div>
 </div>
 
