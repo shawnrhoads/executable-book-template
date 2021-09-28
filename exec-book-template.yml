@@ -21,3 +21,4 @@ dependencies:
     - jupyter-book==0.10.2
     - insipid-sphinx-theme; platform_system != "Windows"
     - sphinx-bootstrap-theme; platform_system != "Windows"
+    - sphinx-inline-tabs; platform_system != "Windows"
